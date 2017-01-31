@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "msnodesqlv8": "^0.2.11",
     "mssql": "^3.3.0"
   }
 }
