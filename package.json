@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "azure-storage": "^2.0.0",
+    "dotenv": "^4.0.0",
     "msnodesqlv8": "^0.2.11",
     "mssql": "^3.3.0"
   }

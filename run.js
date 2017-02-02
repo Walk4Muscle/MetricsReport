@@ -1,5 +1,6 @@
 var sql = require('mssql'),
     fs = require('fs');
+require('dotenv').config();
 require('msnodesqlv8');
 // var config = {
 //     user: 'gary',
@@ -31,7 +32,11 @@ connection.connect().then(() => {
 
     //use stmt 
     request.query(sentence.toString()).then((data)=>{
-        console.dir(data)
+        // console.dir((data[0]))
+        // console.dir(Object.keys(data[0]))
+        var EM = require('./entity/engineerMetrics.entity.js');
+        let em = new EM(data[0]);
+        console.log(JSON.stringify(em));
         connection.close();
     }).catch((err)=>{
         console.error(err);
