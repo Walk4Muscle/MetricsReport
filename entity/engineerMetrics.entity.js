@@ -40,6 +40,8 @@ const tablePropertiesDefine = {
         'Solution'
     ]
 }
+
+         
 class engineerMetrics {
     constructor(entity) {
         this.baisc = {};
